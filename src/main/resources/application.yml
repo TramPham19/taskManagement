@@ -1,0 +1,35 @@
+##Configuration
+#spring:
+#  application:
+#    name: Take Management
+#server:
+#  port: 8080
+#
+#DEBUGING
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/taskmanagement
+    username: root
+    password: trampham1942000@
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
+
+springdoc:
+  api-docs:
+    path: /taskManager
+  swagger-ui:
+    path: /swagger-ui.html
+
+#http://localhost:8080/swagger-ui/index.html#/
